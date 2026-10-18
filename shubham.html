@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ===== SEO (Google Friendly) ===== -->
+<title>Rankora — SEO & Web Development Agency | Rank Higher, Build Better</title>
+<meta name="description" content="Rankora is a professional SEO & Web Development agency. We deliver technical SEO, on-page & off-page SEO, local SEO, custom website development, UI/UX design, e-commerce stores, speed optimization and digital growth that brings real leads." />
+<meta name="keywords" content="SEO agency, web development agency, technical SEO, on-page SEO, off-page SEO, local SEO, keyword research, website design, UI UX, e-commerce development, core web vitals, link building" />
+<meta name="author" content="Rankora Digital Agency" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://www.rankora.example/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Rankora — SEO & Web Development Agency" />
+<meta property="og:description" content="Data-driven SEO and high-performance websites that grow traffic, rankings and revenue." />
+<meta property="og:url" content="https://www.rankora.example/" />
+<meta name="theme-color" content="#2f6bff" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"Rankora — SEO & Web Development Agency",
+  "description":"SEO, web development, UI/UX and digital growth services.",
+  "areaServed":"Worldwide",
+  "priceRange":"$$",
+  "url":"https://www.rankora.example/",
+  "telephone":"+1-800-000-0000",
+  "email":"hello@rankora.example",
+  "serviceType":["Search Engine Optimization","Website Development","UI UX Design","E-commerce Development","Local SEO","Website Speed Optimization"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How long does SEO take to show results?","acceptedAnswer":{"@type":"Answer","text":"Most sites see meaningful movement in 3 to 6 months, with stronger compounding growth from month 6 to 12 depending on competition."}},
+    {"@type":"Question","name":"Do you build websites that are SEO ready?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every build ships with clean semantic HTML, schema markup, fast Core Web Vitals, mobile-first layouts and analytics tracking."}},
+    {"@type":"Question","name":"Can you fix a website that was penalised or dropped in rankings?","acceptedAnswer":{"@type":"Answer","text":"Yes, we run a full technical and backlink audit, remove harmful signals and rebuild authority with a white-hat recovery plan."}}
+  ]
+}
+</script>
+
+<style>
+/* ============================================================
+   RANKORA — Light, Professional, Soft-3D Agency Theme
+============================================================ */
+:root{
+  --bg:#f6f8fc;
+  --bg-2:#eef3fb;
+  --white:#ffffff;
+  --ink:#0e1a2b;
+  --ink-2:#33445c;
+  --muted:#6b7c95;
+  --brand:#2f6bff;
+  --brand-2:#00c2a8;
+  --brand-3:#7b61ff;
+  --soft:#e9f0ff;
+  --line:#e3e9f3;
+  --shadow:0 10px 30px rgba(20,40,80,.08);
+  --shadow-lg:0 24px 60px rgba(20,40,80,.13);
+  --r:18px;
+  --max:1180px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--bg);color:var(--ink);
+  line-height:1.7;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4,h5{font-family:'Sora',sans-serif;line-height:1.22;color:var(--ink);font-weight:700}
+p{color:var(--muted)}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+ul{list-style:none}
+section{padding:96px 0;scroll-margin-top:84px;position:relative}
+.container{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+::selection{background:var(--brand);color:#fff}
+
+/* ---------- utility ---------- */
+.grid{display:grid;gap:26px}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--soft);color:var(--brand);
+  font-size:.78rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  padding:8px 16px;border-radius:100px;border:1px solid #d7e3ff;
+}
+.chip .dot{width:7px;height:7px;border-radius:50%;background:var(--brand-2);box-shadow:0 0 0 4px rgba(0,194,168,.16)}
+.sec-head{max-width:720px;margin:0 auto 56px;text-align:center}
+.sec-head h2{font-size:clamp(1.75rem,3.6vw,2.6rem);margin:16px 0 14px;letter-spacing:-.02em}
+.sec-head p{font-size:1.03rem}
+.left .sec-head{margin-left:0;text-align:left}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:14px 28px;border-radius:100px;font-weight:600;font-size:.95rem;
+  font-family:'Sora',sans-serif;cursor:pointer;border:0;transition:.35s var(--ease);
+  position:relative;overflow:hidden;
+}
+.btn-primary{background:linear-gradient(135deg,var(--brand),#5a86ff);color:#fff;box-shadow:0 12px 26px rgba(47,107,255,.28)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(47,107,255,.36)}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:var(--shadow)}
+.btn-ghost:hover{transform:translateY(-3px);border-color:#c9d7ee;color:var(--brand)}
+.btn svg{width:17px;height:17px}
+
+/* ---------- scroll progress ---------- */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:1000;
+  background:linear-gradient(90deg,var(--brand),var(--brand-2));border-radius:0 4px 4px 0}
+
+/* ---------- header ---------- */
+header{
+  position:fixed;top:0;left:0;width:100%;z-index:900;
+  background:rgba(255,255,255,.82);backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;transition:.4s var(--ease);
+}
+header.stuck{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(20,40,80,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:11px;font-family:'Sora',sans-serif;font-weight:800;font-size:1.28rem;letter-spacing:-.02em}
+.logo .mark{
+  width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:#fff;
+  background:linear-gradient(135deg,var(--brand),var(--brand-3));
+  box-shadow:0 8px 18px rgba(47,107,255,.35);transform-style:preserve-3d;
+  animation:markSpin 9s ease-in-out infinite;
+}
+@keyframes markSpin{0%,100%{transform:rotateY(0) rotateX(0)}50%{transform:rotateY(180deg) rotateX(10deg)}}
+.logo span b{color:var(--brand)}
+.menu{display:flex;align-items:center;gap:6px}
+.menu a{
+  padding:9px 15px;border-radius:100px;font-size:.93rem;font-weight:500;color:var(--ink-2);
+  transition:.3s var(--ease);
+}
+.menu a:hover,.menu a.active{background:var(--soft);color:var(--brand)}
+.nav-cta{display:flex;align-items:center;gap:12px}
+.nav-cta .btn{padding:11px 22px;font-size:.88rem}
+.burger{display:none;width:46px;height:46px;border:1px solid var(--line);background:#fff;border-radius:13px;
+  cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.burger i{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;transition:.35s var(--ease)}
+.burger.open i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open i:nth-child(2){opacity:0}
+.burger.open i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ---------- hero ---------- */
+.hero{
+  min-height:100vh;display:flex;align-items:center;padding:150px 0 90px;overflow:hidden;
+  background:
+    radial-gradient(760px 460px at 82% 8%,rgba(47,107,255,.13),transparent 60%),
+    radial-gradient(620px 420px at 8% 88%,rgba(0,194,168,.13),transparent 60%),
+    linear-gradient(180deg,#fff 0%,var(--bg) 70%);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:64px 64px;opacity:.5;
+  mask-image:radial-gradient(circle at 50% 40%,#000,transparent 72%);
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.035em;margin:22px 0 20px}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(120deg,var(--brand),var(--brand-2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.typed-wrap{display:inline-flex;align-items:center;gap:2px}
+#typed{border-right:2px solid var(--brand);padding-right:4px;animation:blink 1s step-end infinite}
+@keyframes blink{50%{border-color:transparent}}
+.hero p.lead{font-size:1.08rem;max-width:520px;margin-bottom:32px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-note{display:flex;align-items:center;gap:10px;margin-top:30px;font-size:.88rem;color:var(--muted)}
+.avatars{display:flex}
+.avatars span{
+  width:34px;height:34px;border-radius:50%;border:2.5px solid #fff;margin-left:-10px;
+  background:linear-gradient(135deg,#8fb2ff,#00c2a8);display:grid;place-items:center;
+  font-size:.66rem;font-weight:700;color:#fff;font-family:'Sora'
+}
+.avatars span:first-child{margin-left:0}
+
+/* hero 3D visual */
+.hero-visual{perspective:1400px;position:relative;display:flex;justify-content:center}
+.dash-wrap{
+  position:relative;width:100%;max-width:460px;transform-style:preserve-3d;
+  animation:heroFloat 7s ease-in-out infinite;
+}
+@keyframes heroFloat{0%,100%{transform:translateY(0) rotateY(-13deg) rotateX(6deg)}50%{transform:translateY(-16px) rotateY(-8deg) rotateX(3deg)}}
+.dash{
+  background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;
+  box-shadow:var(--shadow-lg);transform:translateZ(30px)
+}
+.dash-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.dash-top h4{font-size:.95rem}
+.dash-top small{color:var(--muted);font-size:.75rem}
+.pill-live{background:#e6faf5;color:#0a9d86;font-size:.7rem;font-weight:700;padding:5px 11px;border-radius:100px}
+.bars{display:flex;align-items:flex-end;gap:11px;height:132px;padding:14px;background:var(--bg-2);border-radius:16px}
+.bar{
+  flex:1;border-radius:8px 8px 4px 4px;height:8%;
+  background:linear-gradient(180deg,#6f95ff,var(--brand));
+  transition:height 1.3s var(--ease);
+}
+.bar:nth-child(even){background:linear-gradient(180deg,#4fe0c8,var(--brand-2))}
+.dash-row{display:flex;gap:12px;margin-top:16px}
+.mini{
+  flex:1;background:var(--bg-2);border-radius:14px;padding:13px 15px;
+}
+.mini b{display:block;font-family:'Sora';font-size:1.12rem}
+.mini small{font-size:.73rem;color:var(--muted)}
+.float-card{
+  position:absolute;background:#fff;border:1px solid var(--line);border-radius:16px;
+  padding:13px 17px;box-shadow:var(--shadow);display:flex;align-items:center;gap:11px;
+  font-size:.82rem;font-weight:600;font-family:'Sora';
+}
+.float-card small{display:block;font-size:.7rem;font-weight:500;color:var(--muted);font-family:'Inter'}
+.fc1{top:-24px;left:-34px;animation:fc1 6s ease-in-out infinite}
+.fc2{bottom:-26px;right:-28px;animation:fc2 7.5s ease-in-out infinite}
+@keyframes fc1{0%,100%{transform:translateY(0) translateZ(60px)}50%{transform:translateY(-14px) translateZ(60px)}}
+@keyframes fc2{0%,100%{transform:translateY(0) translateZ(50px)}50%{transform:translateY(14px) translateZ(50px)}}
+.ic{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:var(--soft);color:var(--brand);flex:none}
+.ic svg{width:19px;height:19px}
+.orbit{
+  position:absolute;width:420px;height:420px;border:1px dashed #cdd9ee;border-radius:50%;
+  top:50%;left:50%;transform:translate(-50%,-50%);animation:spin 34s linear infinite;z-index:0
+}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+
+/* ---------- trust / stats ---------- */
+.stats{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:56px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;text-align:center}
+.stat b{font-family:'Sora';font-size:clamp(1.8rem,3.4vw,2.5rem);display:block;
+  background:linear-gradient(120deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:.9rem;color:var(--muted)}
+
+/* ---------- cards / services ---------- */
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px;
+  box-shadow:var(--shadow);transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .45s;
+  transform-style:preserve-3d;will-change:transform;
+}
+.card:hover{box-shadow:var(--shadow-lg);border-color:#d5e2f7}
+.card .ic{width:52px;height:52px;border-radius:15px;margin-bottom:20px}
+.card .ic svg{width:24px;height:24px}
+.card h3{font-size:1.16rem;margin-bottom:10px}
+.card p{font-size:.94rem}
+.card ul.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.card ul.tags li{font-size:.74rem;background:var(--bg-2);color:var(--ink-2);padding:5px 11px;border-radius:100px;font-weight:500}
+.services-grid{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.svc-more{grid-column:1/-1;display:flex;justify-content:center;margin-top:12px}
+
+/* ---------- process ---------- */
+.process{background:linear-gradient(180deg,#fff,var(--bg))}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;box-shadow:var(--shadow);position:relative}
+.step .num{
+  width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-family:'Sora';font-weight:800;
+  background:linear-gradient(135deg,var(--brand),var(--brand-3));color:#fff;margin-bottom:18px;
+  box-shadow:0 10px 20px rgba(47,107,255,.28)
+}
+.step h3{font-size:1.05rem;margin-bottom:8px}
+.step p{font-size:.9rem}
+
+/* ---------- work ---------- */
+.work-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.work{
+  border-radius:22px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);
+  transition:transform .5s var(--ease),box-shadow .5s var(--ease)
+}
+.work:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.thumb{height:190px;position:relative;display:grid;place-items:center;color:#fff;font-family:'Sora';font-weight:700;font-size:1.05rem;overflow:hidden}
+.thumb::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.35),transparent 55%)}
+.t1{background:linear-gradient(135deg,#2f6bff,#7b61ff)}
+.t2{background:linear-gradient(135deg,#00c2a8,#2f6bff)}
+.t3{background:linear-gradient(135deg,#ff8a5b,#ff5f8f)}
+.work-body{padding:24px 26px}
+.work-body small{color:var(--brand);font-weight:600;font-size:.76rem;text-transform:uppercase;letter-spacing:.08em}
+.work-body h3{font-size:1.12rem;margin:8px 0 8px}
+.work-body p{font-size:.9rem}
+.metric{display:inline-block;margin-top:14px;font-family:'Sora';font-weight:700;color:var(--brand-2);font-size:.9rem}
+
+/* ---------- MAIN CONTENT / INSIGHTS ---------- */
+.insights{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.inside{max-width:920px;margin:0 auto}
+.inside h2{font-size:clamp(1.8rem,3.6vw,2.6rem);letter-spacing:-.03em;margin:16px 0 18px}
+.inside h3{font-size:1.3rem;margin:44px 0 12px;display:flex;align-items:center;gap:12px}
+.inside h3 .n{
+  width:34px;height:34px;flex:none;border-radius:10px;background:var(--soft);color:var(--brand);
+  display:grid;place-items:center;font-size:.85rem;font-family:'Sora'
+}
+.inside p{margin-bottom:16px;font-size:1.01rem;color:var(--ink-2)}
+.inside strong{color:var(--ink)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:24px 0}
+.info-box{background:var(--bg-2);border:1px solid var(--line);border-radius:16px;padding:24px}
+.info-box h4{font-size:1rem;margin-bottom:10px;display:flex;align-items:center;gap:9px}
+.info-box ul li{position:relative;padding-left:24px;margin-bottom:9px;font-size:.93rem;color:var(--ink-2)}
+.info-box ul li::before{
+  content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2))
+}
+blockquote{
+  border-left:4px solid var(--brand);background:var(--soft);padding:22px 26px;border-radius:0 16px 16px 0;
+  margin:26px 0;font-family:'Sora';font-size:1.05rem;color:var(--ink);font-weight:500
+}
+.topic-chips{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 8px}
+.topic-chips span{
+  background:#fff;border:1px solid var(--line);padding:9px 16px;border-radius:100px;font-size:.83rem;
+  color:var(--ink-2);font-weight:500;transition:.3s var(--ease);cursor:default
+}
+.topic-chips span:hover{background:var(--soft);border-color:#c8d8f5;color:var(--brand);transform:translateY(-3px)}
+table.cmp{width:100%;border-collapse:collapse;margin:24px 0;font-size:.92rem;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
+table.cmp th,table.cmp td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line)}
+table.cmp th{background:var(--bg-2);font-family:'Sora';font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink)}
+table.cmp td{color:var(--ink-2)}
+.toc{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.toc a{background:var(--bg-2);border:1px solid var(--line);padding:9px 16px;border-radius:100px;font-size:.84rem;font-weight:500;color:var(--ink-2);transition:.3s var(--ease)}
+.toc a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+/* ---------- pricing ---------- */
+.price-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:stretch}
+.price{position:relative;text-align:left;display:flex;flex-direction:column}
+.price .amt{font-family:'Sora';font-size:2.4rem;font-weight:800;margin:6px 0 2px}
+.price .amt small{font-size:.9rem;color:var(--muted);font-weight:500}
+.price ul{margin:22px 0 26px;flex:1}
+.price ul li{padding-left:26px;position:relative;margin-bottom:11px;font-size:.92rem;color:var(--ink-2)}
+.price ul li::before{content:"✓";position:absolute;left:0;top:0;color:var(--brand-2);font-weight:800}
+.popular{border:2px solid var(--brand);box-shadow:0 22px 50px rgba(47,107,255,.18)}
+.badge-pop{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--brand),var(--brand-3));
+  color:#fff;font-size:.72rem;font-weight:700;padding:6px 16px;border-radius:100px;font-family:'Sora'}
+
+/* ---------- faq ---------- */
+.faq{max-width:820px;margin:0 auto}
+.acc{background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:14px;overflow:hidden;box-shadow:var(--shadow);transition:.35s var(--ease)}
+.acc:hover{border-color:#d3e0f6}
+.acc-q{width:100%;background:none;border:0;text-align:left;padding:22px 24px;cursor:pointer;display:flex;
+  justify-content:space-between;align-items:center;gap:16px;font-family:'Sora';font-weight:600;font-size:1rem;color:var(--ink)}
+.acc-q i{flex:none;width:28px;height:28px;border-radius:9px;background:var(--soft);color:var(--brand);display:grid;place-items:center;
+  transition:.4s var(--ease);font-style:normal;font-size:1.1rem}
+.acc.open .acc-q i{transform:rotate(135deg);background:var(--brand);color:#fff}
+.acc-a{max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
+.acc-a p{padding:0 24px 24px;font-size:.95rem}
+
+/* ---------- testimonials ---------- */
+.testi{background:linear-gradient(180deg,var(--bg),#fff)}
+.slider{position:relative;max-width:820px;margin:0 auto;overflow:hidden}
+.slides{display:flex;transition:transform .7s var(--ease)}
+.slide{min-width:100%;padding:6px}
+.quote-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:40px;box-shadow:var(--shadow);text-align:center}
+.quote-card p{font-size:1.08rem;color:var(--ink-2);font-family:'Sora';font-weight:500;line-height:1.6}
+.who{margin-top:22px;display:flex;align-items:center;justify-content:center;gap:14px}
+.who .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;display:grid;place-items:center;font-family:'Sora';font-weight:700}
+.who b{display:block;font-family:'Sora';font-size:.95rem}
+.who small{color:var(--muted);font-size:.8rem}
+.stars{color:#ffb020;letter-spacing:3px;margin-bottom:16px;font-size:1rem}
+.dots{display:flex;justify-content:center;gap:9px;margin-top:26px}
+.dots button{width:9px;height:9px;border-radius:50%;border:0;background:#cfd9ea;cursor:pointer;transition:.35s var(--ease);padding:0}
+.dots button.on{background:var(--brand);width:26px;border-radius:100px}
+
+/* ---------- cta + contact ---------- */
+.cta-band{
+  background:linear-gradient(135deg,#2f6bff,#7b61ff 60%,#00c2a8);border-radius:28px;padding:60px 48px;color:#fff;
+  display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;
+  box-shadow:0 30px 70px rgba(47,107,255,.28);position:relative;overflow:hidden
+}
+.cta-band::after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.13)}
+.cta-band h2{color:#fff;font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:10px}
+.cta-band p{color:rgba(255,255,255,.88);max-width:520px}
+.cta-band .btn{background:#fff;color:var(--brand);box-shadow:none}
+.cta-band .btn:hover{transform:translateY(-3px) scale(1.02)}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:44px;align-items:start}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:38px;box-shadow:var(--shadow-lg)}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:.85rem;font-weight:600;margin-bottom:8px;color:var(--ink-2);font-family:'Sora'}
+.field input,.field select,.field textarea{
+  width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:13px;background:var(--bg);
+  font-family:'Inter';font-size:.95rem;color:var(--ink);transition:.3s var(--ease)
+}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--brand);background:#fff;box-shadow:0 0 0 4px rgba(47,107,255,.1)}
+.field.err input,.field.err select,.field.err textarea{border-color:#ff5f7e;background:#fff6f8}
+.err-msg{color:#e0476a;font-size:.78rem;margin-top:6px;display:none}
+.field.err .err-msg{display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-ok{background:#e9fbf5;color:#0a9d86;border:1px solid #bff0e2;padding:14px 18px;border-radius:13px;
+  font-size:.92rem;font-weight:600;display:none;margin-bottom:18px}
+.info-list li{display:flex;gap:16px;margin-bottom:22px;align-items:flex-start}
+.info-list .ic{width:46px;height:46px;border-radius:14px}
+.info-list b{display:block;font-family:'Sora';font-size:.98rem}
+.info-list p{font-size:.9rem}
+
+/* ---------- footer ---------- */
+footer{background:#0f1b2d;color:#a9b8cf;padding:74px 0 0;margin-top:0}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:40px;padding-bottom:52px}
+footer h4{color:#fff;font-size:1rem;margin-bottom:18px}
+footer p{color:#93a5bf;font-size:.92rem}
+footer ul li{margin-bottom:11px}
+footer ul li a{font-size:.92rem;color:#93a5bf;transition:.3s}
+footer ul li a:hover{color:#fff;padding-left:5px}
+.f-logo{color:#fff;font-family:'Sora';font-weight:800;font-size:1.3rem;display:flex;gap:11px;align-items:center;margin-bottom:16px}
+.socials{display:flex;gap:11px;margin-top:20px}
+.socials a{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.07);display:grid;place-items:center;transition:.35s var(--ease)}
+.socials a:hover{background:var(--brand);transform:translateY(-4px)}
+.socials svg{width:18px;height:18px;fill:#fff}
+.f-bottom{border-top:1px solid rgba(255,255,255,.09);padding:24px 0;display:flex;justify-content:space-between;
+  gap:14px;flex-wrap:wrap;font-size:.86rem;color:#8496af}
+
+/* ---------- back to top ---------- */
+#toTop{
+  position:fixed;right:26px;bottom:26px;width:50px;height:50px;border-radius:15px;border:0;cursor:pointer;
+  background:linear-gradient(135deg,var(--brand),var(--brand-3));color:#fff;display:grid;place-items:center;
+  box-shadow:0 14px 30px rgba(47,107,255,.4);opacity:0;pointer-events:none;transform:translateY(18px);
+  transition:.45s var(--ease);z-index:800
+}
+#toTop.show{opacity:1;pointer-events:auto;transform:none}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media(max-width:1024px){
+  .hero-grid,.contact-grid{grid-template-columns:1fr;gap:60px}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:36px}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .two-col{grid-template-columns:1fr}
+  .menu{
+    position:fixed;inset:78px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;
+    padding:20px 24px 30px;gap:4px;border-bottom:1px solid var(--line);box-shadow:var(--shadow-lg);
+    transform:translateY(-130%);transition:transform .5s var(--ease);z-index:-1
+  }
+  .menu.open{transform:none}
+  .menu a{padding:14px 16px;font-size:1rem}
+  .burger{display:flex}
+  .nav-cta .btn{display:none}
+}
+@media(max-width:600px){
+  section{padding:70px 0}
+  .steps,.price-grid,.work-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr 1fr;gap:26px}
+  .f-grid{grid-template-columns:1fr}
+  .cta-band{padding:44px 28px;text-align:center;justify-content:center}
+  .hero{padding:130px 0 70px}
+  .float-card{display:none}
+  .two{grid-template-columns:1fr}
+  .fc1,.fc2{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+
+<body>
+<div id="progress"></div>
+
+<!-- ================= HEADER ================= -->
+<header id="header">
+  <div class="container nav">
+    <a href="#home" class="logo" aria-label="Rankora home">
+      <span class="mark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>
+      </span>
+      <span>Rank<b>ora</b></span>
+    </a>
+
+    <nav class="menu" id="menu" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#work">Work</a>
+      <a href="#insights">Insights</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary">Get Free Audit</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="chip reveal"><span class="dot"></span> SEO &amp; Web Development Agency</span>
+      <h1 class="reveal">We Build Websites That <span class="typed-wrap"><em id="typed">Rank Higher</em></span></h1>
+      <p class="lead reveal">Rankora blends technical SEO, clean web development and conversion‑focused design into one growth engine — so your business gets found, trusted and chosen by the right customers.</p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn-primary">Start Your Project
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#services" class="btn btn-ghost">Explore Services</a>
+      </div>
+      <div class="hero-note reveal">
+        <div class="avatars" aria-hidden="true"><span>A+</span><span>S2</span><span>+</span></div>
+        Trusted by 320+ growing brands worldwide
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="orbit" aria-hidden="true"></div>
+      <div class="dash-wrap" id="dashWrap">
+        <div class="dash">
+          <div class="dash-top">
+            <div><h4>Organic Growth</h4><small>Last 6 months</small></div>
+            <span class="pill-live">● LIVE</span>
+          </div>
+          <div class="bars" id="bars" aria-hidden="true">
+            <div class="bar" data-h="34"></div><div class="bar" data-h="46"></div><div class="bar" data-h="41"></div>
+            <div class="bar" data-h="62"></div><div class="bar" data-h="71"></div><div class="bar" data-h="86"></div>
+            <div class="bar" data-h="97"></div>
+          </div>
+          <div class="dash-row">
+            <div class="mini"><b>1,842</b><small>Keywords ranked</small></div>
+            <div class="mini"><b>98/100</b><small>Core Web Vitals</small></div>
+          </div>
+        </div>
+
+        <div class="float-card fc1">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v6h-6"/></svg></span>
+          <div>Rank #1 <small>“seo agency services”</small></div>
+        </div>
+        <div class="float-card fc2">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div>0.9s Load <small>Mobile speed score</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<div class="stats">
+  <div class="container stats-grid">
+    <div class="stat reveal"><b data-count="320" data-suffix="+">0</b><span>Projects Delivered</span></div>
+    <div class="stat reveal"><b data-count="4.9" data-suffix="★">0</b><span>Average Client Rating</span></div>
+    <div class="stat reveal"><b data-count="287" data-suffix="%">0</b><span>Avg. Organic Traffic Lift</span></div>
+    <div class="stat reveal"><b data-count="12" data-suffix=" yrs">0</b><span>Industry Experience</span></div>
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="container left">
+    <div class="sec-head reveal">
+      <span class="chip"><span class="dot"></span> What We Do</span>
+      <h2>Full‑Service SEO &amp; Web Development</h2>
+      <p>Everything your brand needs to be found on Google and converted into customers — planned, built, measured and scaled by one senior team.</p>
+    </div>
+
+    <div class="grid services-grid" data-stagger>
+
+      <article class="card tilt reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4.3-4.3"/></svg></span>
+        <h3>On‑Page SEO</h3>
+        <p>Title &amp; meta optimisation, heading hierarchy, internal linking, schema markup and content structure that search engines understand instantly.</p>
+        <ul class="tags"><li>Meta tags</li><li>Schema</li><li>Internal links</li></ul>
+      </article>
+
+      <article class="card tilt reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v13"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/></svg></span>
+        <h3>Off‑Page SEO &amp; Link Building</h3>
+        <p>White‑hat digital PR, guest publishing, authority citations and backlink profiles that build real domain trust — never risky spam links.</p>
+        <ul class="tags"><li>Digital PR</li><li>Guest posts</li><li>Authority</li></ul>
+      </article>
+
+      <article class="card tilt reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+        <h3>Technical SEO</h3>
+        <p>Crawlability, indexation, sitemaps, canonicals, structured data, JS rendering, site architecture and log‑file analysis for flawless discovery.</p>
+        <ul class="tags"><li>Crawl budget</li><li>Indexing</li><li>Structured data</li></ul>
+      </article>
+
+      <article class="card tilt reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <h3>Local SEO &amp; Maps</h3>
+        <p>Google Business Profile optimisation, local citations, reviews strategy and location pages that put you in the map pack for “near me” searches.</p>
+        <ul class="tags"><li>GBP</li><li>Citations</li><li>Map pack</li></ul>
+      </article>
+
+      <article class="card tilt reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l-5-6 5-6M15 6l5 6-5 6"/></svg></span>
+        <h3>Custom Web Development</h3>
+        <p>Fast, secure, scalable websites built with modern HTML, CSS, JavaScript and clean CMS integrations — SEO‑ready from the first line of code.</p>
+        <ul class="tags"><li>HTML/CSS/JS</li><li>CMS</li><li>API</li></ul>
+      </article>
+
+      <article class="card tilt reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></span>
+        <h3>UI/UX &amp; Web Design</h3>
+        <p>Research‑led interfaces, wireframes, design systems and mobile‑first layouts designed around one goal: turning visitors into paying customers.</p>
+        <ul class="tags"><li>Wireframes</li><li>Design system</li><li>A/B tests</li></ul>
+      </article>
+
+      <article class="card tilt reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h3l2.6 12h11L21 7H6"/></svg></span>
+        <h3>E‑commerce Development</h3>
+        <p>Product pages, categories, filters, checkout optimisation, payment and shipping integration — store SEO that grows revenue, not just traffic.</p>
+        <ul class="tags"><li>Store SEO</li><li>Checkout</li><li>Payments</li></ul>
+      </article>
+
+      <article class="card tilt reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg></span>
+        <h3>Speed &amp; Core Web Vitals</h3>
+        <p>Image optimisation, lazy loading, caching, CDN setup and code splitting to hit green Core Web Vitals and improve both ranking and sales.</p>
+        <ul class="tags"><li>LCP</li><li>CLS</li><li>CDN</li></ul>
+      </article>
+
+      <article class="card tilt reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19V5M4 19h16"/><path d="M8 15l3-4 3 2 5-7"/></svg></span>
+        <h3>Content &amp; Keyword Strategy</h3>
+        <p>Search‑intent mapping, topic clusters, blog publishing and content refreshes that build topical authority and keep you relevant year after year.</p>
+        <ul class="tags"><li>Topic clusters</li><li>Intent</li><li>Editorial</li></ul>
+      </article>
+
+      <div class="svc-more reveal">
+        <a href="#contact" class="btn btn-ghost">See All Services &amp; Custom Plans</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="chip"><span class="dot"></span> How We Work</span>
+      <h2>A Simple, Proven 4‑Step Growth Process</h2>
+      <p>No guesswork, no jargon — a transparent roadmap you can follow from day one to long‑term growth.</p>
+    </div>
+    <div class="steps" data-stagger>
+      <div class="step reveal"><div class="num">01</div><h3>Audit &amp; Discovery</h3><p>We analyse your site, competitors, keywords and analytics to find exactly what is holding growth back.</p></div>
+      <div class="step reveal"><div class="num">02</div><h3>Strategy &amp; Roadmap</h3><p>A 90‑day and 12‑month plan with priorities, targets, KPIs and a clear content + development calendar.</p></div>
+      <div class="step reveal"><div class="num">03</div><h3>Build &amp; Optimise</h3><p>Our developers and SEO specialists implement fixes, pages, content and technical upgrades in sprints.</p></div>
+      <div class="step reveal"><div class="num">04</div><h3>Measure &amp; Scale</h3><p>Monthly reporting, rank &amp; revenue tracking, testing and scaling whatever delivers the best ROI.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section id="work">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="chip"><span class="dot"></span> Case Studies</span>
+      <h2>Real Projects, Real Results</h2>
+      <p>A few examples of how strategy, design and development combine into measurable business growth.</p>
+    </div>
+    <div class="grid work-grid" data-stagger>
+      <article class="work reveal">
+        <div class="thumb t1">Nordica Interiors</div>
+        <div class="work-body">
+          <small>Local SEO + Website Redesign</small>
+          <h3>From page 4 to the local map pack</h3>
+          <p>Rebuilt the site with location pages, schema and a faster stack, then built 40 local citations and a review engine.</p>
+          <span class="metric">+412% qualified calls in 7 months</span>
+        </div>
+      </article>
+      <article class="work reveal">
+        <div class="thumb t2">Lumen Skincare</div>
+        <div class="work-body">
+          <small>E‑commerce SEO &amp; Development</small>
+          <h3>Product pages that actually sell</h3>
+          <p>Category architecture, internal linking, Core Web Vitals fixes and structured product data across 180 SKUs.</p>
+          <span class="metric">+268% organic revenue</span>
+        </div>
+      </article>
+      <article class="work reveal">
+        <div class="thumb t3">Vertex SaaS</div>
+        <div class="work-body">
+          <small>Technical SEO + Content</small>
+          <h3>Fixing a JavaScript rendering problem</h3>
+          <p>Moved critical content to server rendering, cleaned 12k duplicate URLs and launched a topic‑cluster blog.</p>
+          <span class="metric">+9x demo bookings</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAIN CONTENT / INSIGHTS ================= -->
+<section class="insights" id="insights">
+  <div class="container">
+    <div class="inside">
+
+      <div class="sec-head reveal" style="margin-bottom:26px">
+        <span class="chip"><span class="dot"></span> The Main Guide</span>
+        <h2>SEO &amp; Web Development: The Complete Guide to Growing Your Business Online</h2>
+        <p>Everything a business owner should understand about search rankings, website performance and digital growth — explained simply, without the jargon.</p>
+        <div class="toc" aria-label="Section links">
+          <a href="#g1">What is SEO</a>
+          <a href="#g2">The 3 Pillars</a>
+          <a href="#g3">Keywords</a>
+          <a href="#g4">Web Development</a>
+          <a href="#g5">Core Web Vitals</a>
+          <a href="#g6">Conversion</a>
+          <a href="#g7">Maintenance</a>
+        </div>
+      </div>
+
+      <h3 id="g1" class="reveal"><span class="n">1</span> What is SEO and why does it matter?</h3>
+      <p class="reveal">SEO (Search Engine Optimisation) is the practice of making your website the most useful, fastest and most trustworthy answer to what people are already searching for. When Google decides a page deserves to rank, it sends free, repeated traffic — every single day — without you paying for each click.</p>
+      <p class="reveal">That is why SEO is an <strong>asset</strong> and advertising is an <strong>expense</strong>. A paid campaign stops working the moment you stop paying. A well‑optimised page can keep delivering leads for years. For most service businesses, e‑commerce stores and SaaS companies, organic search becomes the single largest and most profitable acquisition channel after 6–12 months of consistent work.</p>
+      <blockquote class="reveal">“Rankings are not the goal. Qualified traffic that converts into revenue is the goal — and that is exactly what our SEO strategy is designed around.”</blockquote>
+
+      <h3 id="g2" class="reveal"><span class="n">2</span> The three pillars of SEO</h3>
+      <div class="two-col reveal">
+        <div class="info-box">
+          <h4>🔍 On‑Page SEO</h4>
+          <ul>
+            <li>Title tags, meta descriptions &amp; URLs</li>
+            <li>H1–H3 heading structure</li>
+            <li>Keyword placement &amp; readability</li>
+            <li>Image alt text &amp; internal linking</li>
+            <li>Schema / structured data markup</li>
+          </ul>
+        </div>
+        <div class="info-box">
+          <h4>🔗 Off‑Page SEO</h4>
+          <ul>
+            <li>High‑quality backlink acquisition</li>
+            <li>Digital PR &amp; brand mentions</li>
+            <li>Guest publishing on trusted sites</li>
+            <li>Local citations &amp; directories</li>
+            <li>Review &amp; reputation signals</li>
+          </ul>
+        </div>
+      </div>
+      <div class="info-box reveal" style="margin-bottom:18px">
+        <h4>⚙️ Technical SEO</h4>
+        <ul>
+          <li>Crawlability, indexation &amp; XML sitemaps</li>
+          <li>Canonical tags, redirects &amp; duplicate control</li>
+          <li>Site architecture &amp; URL hierarchy</li>
+          <li>Mobile‑first indexing &amp; JavaScript rendering</li>
+          <li>Site speed, HTTPS &amp; Core Web Vitals</li>
+          <li>Log analysis, robots.txt &amp; Search Console health</li>
+        </ul>
+      </div>
+      <p class="reveal">Neglect any one pillar and the other two lose power. A beautiful page with great content will still fail if Google cannot crawl it; a technically perfect site will still fail if nobody links to it or the content does not match search intent. <strong>Balance is the strategy.</strong></p>
+
+      <h3 id="g3" class="reveal"><span class="n">3</span> Keyword research &amp; search intent</h3>
+      <p class="reveal">Before writing a single word, we map keywords by <strong>intent</strong>, because Google ranks pages that satisfy the reason behind the search:</p>
+      <div class="two-col reveal">
+        <div class="info-box">
+          <h4>Intent types we target</h4>
+          <ul>
+            <li><b>Informational</b> — “how to improve website speed”</li>
+            <li><b>Commercial</b> — “best seo agency for small business”</li>
+            <li><b>Transactional</b> — “hire web developer near me”</li>
+            <li><b>Navigational</b> — “rankora pricing”</li>
+          </ul>
+        </div>
+        <div class="info-box">
+          <h4>How we choose keywords</h4>
+          <ul>
+            <li>Search volume vs. realistic difficulty</li>
+            <li>Business value per keyword (not just traffic)</li>
+            <li>Long‑tail clusters that convert faster</li>
+            <li>Competitor gap analysis</li>
+          </ul>
+        </div>
+      </div>
+      <p class="reveal">We then organise those keywords into <strong>topic clusters</strong>: one authoritative pillar page supported by many related supporting articles, all internally linked. This is the fastest modern way to build topical authority in a competitive niche.</p>
+
+      <table class="cmp reveal">
+        <caption class="sr-only" style="position:absolute;left:-9999px">SEO vs paid ads comparison</caption>
+        <thead><tr><th>Factor</th><th>SEO (Organic)</th><th>Paid Ads (PPC)</th></tr></thead>
+        <tbody>
+          <tr><td>Cost over time</td><td>Decreases as authority grows</td><td>Stays constant forever</td></tr>
+          <tr><td>Time to results</td><td>3–6 months</td><td>Instant</td></tr>
+          <tr><td>Trust &amp; click‑through</td><td>High — users trust organic results</td><td>Lower — often skipped as ads</td></tr>
+          <tr><td>Best used for</td><td>Long‑term sustainable growth</td><td>Launches, promos, fast testing</td></tr>
+        </tbody>
+      </table>
+      <p class="reveal">Our recommendation for most clients: run both. Ads give you data and cash flow today; SEO compounds into your most valuable channel tomorrow.</p>
+
+      <h3 id="g4" class="reveal"><span class="n">4</span> Web development: how your code affects rankings</h3>
+      <p class="reveal">Search engines are readers of code. A website built with clean, semantic HTML is dramatically easier to understand than one bloated with unnecessary scripts and inline styles. That is why development and SEO are not two departments — they are one discipline.</p>
+      <div class="info-box reveal" style="margin-bottom:18px">
+        <h4>What we build into every project</h4>
+        <ul>
+          <li>Semantic HTML5 structure &amp; accessible landmarks</li>
+          <li>Mobile‑first responsive CSS with fluid typography</li>
+          <li>Lightweight vanilla JavaScript — no unnecessary frameworks</li>
+          <li>SEO‑friendly URLs, breadcrumbs &amp; canonical logic</li>
+          <li>Open Graph, Twitter cards and JSON‑LD schema</li>
+          <li>Analytics, search console &amp; conversion event tracking</li>
+          <li>Security headers, HTTPS &amp; spam‑protected forms</li>
+          <li>Easy‑to‑manage CMS so your team can publish freely</li>
+        </ul>
+      </div>
+      <p class="reveal">We also design for <strong>accessibility</strong> — proper contrast, keyboard navigation, alt text and readable font sizes. It is good ethics, better UX, and increasingly a ranking and legal consideration.</p>
+
+      <h3 id="g5" class="reveal"><span class="n">5</span> Core Web Vitals &amp; site speed</h3>
+      <p class="reveal">Speed is both a ranking signal and a revenue signal. Users leave slow sites, and Google measures exactly that behaviour through three Core Web Vitals:</p>
+      <div class="two-col reveal">
+        <div class="info-box"><h4>LCP — Largest Contentful Paint</h4><ul><li>Target: under 2.5 seconds</li><li>Optimise hero images, caching &amp; server response</li></ul></div>
+        <div class="info-box"><h4>INP / FID — Interactivity</h4><ul><li>Target: under 200 ms</li><li>Reduce heavy JavaScript &amp; blocking scripts</li></ul></div>
+        <div class="info-box"><h4>CLS — Visual Stability</h4><ul><li>Target: under 0.1</li><li>Reserve space for images, ads &amp; embeds</li></ul></div>
+        <div class="info-box"><h4>Our speed toolkit</h4><ul><li>Modern image formats &amp; lazy loading</li><li>Minification, compression &amp; CDN delivery</li></ul></div>
+      </div>
+
+      <h3 id="g6" class="reveal"><span class="n">6</span> Conversion optimisation: traffic means nothing alone</h3>
+      <p class="reveal">Ranking #1 for a keyword that never buys anything is a vanity metric. Every project includes CRO thinking: clear value proposition above the fold, single focused call‑to‑action, social proof, fast forms, trust signals and mobile thumb‑friendly design. We then test, measure and iterate using real user behaviour instead of opinions.</p>
+
+      <h3 id="g7" class="reveal"><span class="n">7</span> Maintenance, reporting &amp; long‑term growth</h3>
+      <p class="reveal">Search algorithms change, competitors publish, plugins update and markets shift. Ongoing maintenance is not optional — it protects the investment you already made. Our retainers include technical monitoring, content refreshes, link acquisition, performance checks and a plain‑English monthly report showing rankings, traffic, leads and revenue impact.</p>
+
+      <h3 class="reveal"><span class="n">✦</span> Topics &amp; services we cover</h3>
+      <div class="topic-chips reveal">
+        <span>Technical SEO</span><span>On‑Page SEO</span><span>Off‑Page SEO</span><span>Local SEO</span>
+        <span>E‑commerce SEO</span><span>International SEO</span><span>Keyword Research</span><span>Link Building</span>
+        <span>Content Strategy</span><span>Website Design</span><span>Web Development</span><span>UI/UX Design</span>
+        <span>WordPress &amp; CMS</span><span>E‑commerce Development</span><span>Core Web Vitals</span><span>Site Speed</span>
+        <span>Migration SEO</span><span>Penalty Recovery</span><span>Analytics &amp; Tracking</span><span>Conversion Rate Optimisation</span>
+        <span>Brand Reputation</span><span>Monthly Reporting</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section id="pricing">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="chip"><span class="dot"></span> Pricing</span>
+      <h2>Simple Plans, No Hidden Fees</h2>
+      <p>Transparent monthly packages. Scale up or down any time — you are never locked into long contracts.</p>
+    </div>
+    <div class="grid price-grid" data-stagger>
+      <div class="card price reveal">
+        <h3>Starter SEO</h3>
+        <div class="amt">$499<small>/month</small></div>
+        <p>For new sites and local businesses getting their foundations right.</p>
+        <ul>
+          <li>Technical + on‑page SEO audit</li>
+          <li>Up to 20 target keywords</li>
+          <li>4 optimised pages per month</li>
+          <li>Google Business Profile setup</li>
+          <li>Monthly report &amp; call</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">Choose Starter</a>
+      </div>
+
+      <div class="card price popular reveal">
+        <span class="badge-pop">Most Popular</span>
+        <h3>Growth SEO + Web</h3>
+        <div class="amt">$1,199<small>/month</small></div>
+        <p>For brands serious about compounding organic revenue.</p>
+        <ul>
+          <li>Everything in Starter</li>
+          <li>60+ keywords &amp; topic clusters</li>
+          <li>Content writing + internal linking</li>
+          <li>Link building &amp; digital PR</li>
+          <li>Website improvements &amp; CRO testing</li>
+          <li>Core Web Vitals monitoring</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Choose Growth</a>
+      </div>
+
+      <div class="card price reveal">
+        <h3>Enterprise / Custom</h3>
+        <div class="amt">Custom</div>
+        <p>Large catalogs, multi‑location or international expansions.</p>
+        <ul>
+          <li>Dedicated senior strategist</li>
+          <li>Unlimited keyword strategy</li>
+          <li>Custom development sprints</li>
+          <li>International &amp; migration SEO</li>
+          <li>Priority support &amp; SLA</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">Talk to Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testi">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="chip"><span class="dot"></span> Client Love</span>
+      <h2>What Our Clients Say</h2>
+    </div>
+    <div class="slider reveal">
+      <div class="slides" id="slides">
+        <div class="slide"><div class="quote-card">
+          <div class="stars">★★★★★</div>
+          <p>“Within five months we went from invisible to page one for our five most important keywords. Calls doubled and the website finally feels like our brand deserves.”</p>
+          <div class="who"><span class="av">SM</span><div><b>Sarah Mitchell</b><small>Founder, Nordica Interiors</small></div></div>
+        </div></div>
+        <div class="slide"><div class="quote-card">
+          <div class="stars">★★★★★</div>
+          <p>“They rebuilt our store and fixed speed issues our previous agency ignored for years. Organic revenue is up 268% and our bounce rate is half of what it was.”</p>
+          <div class="who"><span class="av">DK</span><div><b>Daniel Kim</b><small>CEO, Lumen Skincare</small></div></div>
+        </div></div>
+        <div class="slide"><div class="quote-card">
+          <div class="stars">★★★★★</div>
+          <p>“The clearest reporting we have ever received. Every month we know exactly what was done, why it was done and what it produced. True partners, not vendors.”</p>
+          <div class="who"><span class="av">AR</span><div><b>Aisha Rahman</b><small>Marketing Lead, Vertex SaaS</small></div></div>
+        </div></div>
+      </div>
+      <div class="dots" id="dots" role="tablist" aria-label="Testimonials"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="chip"><span class="dot"></span> FAQ</span>
+      <h2>Questions, Answered Honestly</h2>
+    </div>
+    <div class="faq" data-stagger>
+      <div class="acc reveal">
+        <button class="acc-q">How long before SEO shows results? <i>+</i></button>
+        <div class="acc-a"><p>Most websites see meaningful movement between month 3 and 6, with stronger compounding growth from month 6 to 12. Competitive niches take longer; low‑competition local niches can move much faster. We set realistic expectations in the first audit — we never promise overnight rankings.</p></div>
+      </div>
+      <div class="acc reveal">
+        <button class="acc-q">Do you build websites that are SEO‑ready from day one? <i>+</i></button>
+        <div class="acc-a"><p>Yes. Every build ships with semantic HTML, clean URLs, schema markup, fast Core Web Vitals, mobile‑first design, analytics and Search Console tracking. You never have to rebuild a site later just to make it rank.</p></div>
+      </div>
+      <div class="acc reveal">
+        <button class="acc-q">Can you recover a site that dropped in rankings or was penalised? <i>+</i></button>
+        <div class="acc-a"><p>Yes. We run a full technical and backlink audit, identify harmful signals, disavow toxic links where appropriate, fix indexation issues and rebuild authority with white‑hat tactics. Recovery timelines vary but are almost always possible.</p></div>
+      </div>
+      <div class="acc reveal">
+        <button class="acc-q">Do you require long‑term contracts? <i>+</i></button>
+        <div class="acc-a"><p>No lock‑ins. We recommend a minimum 3‑month start so the strategy has time to work, after which everything runs month‑to‑month. Clients stay because of results, not paperwork.</p></div>
+      </div>
+      <div class="acc reveal">
+        <button class="acc-q">What do I get in the monthly report? <i>+</i></button>
+        <div class="acc-a"><p>Rankings for target keywords, organic traffic and trend, top landing pages, leads or revenue attributed to organic, work completed, and the plan for next month — in plain English, plus a 30‑minute call to walk through it.</p></div>
+      </div>
+      <div class="acc reveal">
+        <button class="acc-q">Which platforms and technologies do you work with? <i>+</i></button>
+        <div class="acc-a"><p>Custom HTML/CSS/JavaScript builds, WordPress, Shopify, WooCommerce and headless setups. If you already have a site, we optimise it; if not, we recommend the lightest platform that fits your budget and growth goals.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section style="padding-top:0">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Get Your Free SEO &amp; Website Audit</h2>
+        <p>We will review your site, your top 3 competitors and your keyword opportunities — then show you exactly what to fix first. No cost, no obligation.</p>
+      </div>
+      <a href="#contact" class="btn">Request My Audit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" style="padding-top:0">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="chip"><span class="dot"></span> Contact</span>
+      <h2>Let’s Build Something That Ranks</h2>
+      <p>Tell us about your project and we’ll reply within one business day with next steps.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <ul class="info-list">
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span>
+            <div><b>Email Us</b><p>hello@rankora.example<br>support@rankora.example</p></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span>
+            <div><b>Call Us</b><p>+1 (800) 000‑0000<br>Mon–Fri, 9am–6pm</p></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><b>Studio</b><p>Level 7, Growth Tower<br>Global Remote Team</p></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><b>Response Time</b><p>Under 24 hours on business days</p></div></li>
+        </ul>
+      </div>
+
+      <form class="form-card reveal" id="contactForm" novalidate>
+        <div class="form-ok" id="formOk">✅ Thank you! Your message has been received — we’ll be in touch within one business day.</div>
+        <div class="two">
+          <div class="field"><label for="name">Full Name</label><input id="name" name="name" type="text" placeholder="Jane Cooper" required><span class="err-msg">Please enter your name</span></div>
+          <div class="field"><label for="email">Email Address</label><input id="email" name="email" type="email" placeholder="jane@company.com" required><span class="err-msg">Please enter a valid email</span></div>
+        </div>
+        <div class="two">
+          <div class="field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" placeholder="+1 555 000 0000"></div>
+          <div class="field"><label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option>On‑Page SEO</option><option>Off‑Page SEO / Link Building</option>
+              <option>Technical SEO</option><option>Local SEO</option>
+              <option>Website Development</option><option>UI/UX &amp; Web Design</option>
+              <option>E‑commerce Development</option><option>Speed / Core Web Vitals</option>
+              <option>Full Growth Package</option>
+            </select><span class="err-msg">Please choose a service</span></div>
+        </div>
+        <div class="field"><label for="budget">Monthly Budget</label>
+          <select id="budget" name="budget">
+            <option>Under $500</option><option>$500 – $1,500</option><option>$1,500 – $5,000</option><option>$5,000+</option>
+          </select>
+        </div>
+        <div class="field"><label for="msg">Project Details</label><textarea id="msg" name="msg" placeholder="Tell us about your website, goals and current challenges…" required></textarea><span class="err-msg">Please tell us a little about your project</span></div>
+        <button type="submit" class="btn btn-primary" style="width:100%">Send Message
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo">
+          <span class="mark" style="width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,#2f6bff,#7b61ff)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg>
+          </span>
+          Rankora
+        </div>
+        <p>An SEO &amp; web development agency helping ambitious brands get found, trusted and chosen. Strategy, design, code and content — under one roof.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3a5 5 0 00-5 5v3H7v3h2v6h3v-6h3l1-3h-4v-2a1 1 0 011-1z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4 9h3v11H4zM5.5 4a1.8 1.8 0 110 3.6 1.8 1.8 0 010-3.6zM10 9h3v1.7A3.4 3.4 0 0116 9c3 0 4 1.9 4 5v6h-3v-5.3c0-1.3-.5-2.2-1.7-2.2S13 8.8 13 10.2V20h-3z"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path d="M4 4h4.5l4 5.6L17.5 4H20l-6.4 7.4L20.5 20H16l-4.3-6L6.8 20H4l6.7-7.8z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm5 5.5A3.5 3.5 0 1015.5 12 3.5 3.5 0 0012 8.5zm0 2A1.5 1.5 0 1110.5 12 1.5 1.5 0 0112 10.5zM17 6.2a1 1 0 101 1 1 1 0 00-1-1z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">On‑Page SEO</a></li>
+          <li><a href="#services">Off‑Page SEO</a></li>
+          <li><a href="#services">Technical SEO</a></li>
+          <li><a href="#services">Local SEO</a></li>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">E‑commerce SEO</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#work">Case Studies</a></li>
+          <li><a href="#insights">SEO Guide</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Growth Newsletter</h4>
+        <p>One practical SEO &amp; web tip every week. No spam, unsubscribe anytime.</p>
+        <form onsubmit="event.preventDefault();this.querySelector('input').value='';this.nextElementSibling.style.display='block';" style="margin-top:16px">
+          <div class="field" style="margin:0"><input type="email" placeholder="Your email address" required style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:#fff"></div>
+        </form>
+        <p style="display:none;color:#4fe0c8;font-size:.85rem;margin-top:10px">Subscribed — welcome aboard! 🎉</p>
+      </div>
+    </div>
+
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> Rankora Digital Agency. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a> · <a href="#">Sitemap</a></span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script>
+/* =========================================================
+   RANKORA — smooth, light, professional interactions
+========================================================= */
+(function(){
+  'use strict';
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- 1. Header state + scroll progress + toTop ---------- */
+  const header=document.getElementById('header'),
+        prog=document.getElementById('progress'),
+        toTop=document.getElementById('toTop');
+
+  function onScroll(){
+    const y=window.scrollY;
+    header.classList.toggle('stuck', y>20);
+    const h=document.documentElement.scrollHeight-window.innerHeight;
+    prog.style.width=(h>0?(y/h)*100:0)+'%';
+    toTop.classList.toggle('show', y>600);
+    
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  toTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:reduce?'auto':'smooth'}));
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  /* ---------- 2. Mobile menu ---------- */
+  const burger=document.getElementById('burger'), menu=document.getElementById('menu');
+  burger.addEventListener('click',()=>{
+    const open=menu.classList.toggle('open');
+    burger.classList.toggle('open',open);
+    burger.setAttribute('aria-expanded',open);
+  });
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    menu.classList.remove('open'); burger.classList.remove('open');
+  }));
+
+  /* ---------- 3. Active nav link ---------- */
+
+
+  /* ---------- 4. Reveal on scroll (staggered) ---------- */
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  },{threshold:.15,rootMargin:'0px 0px -60px 0px'});
+
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  document.querySelectorAll('[data-stagger]').forEach(group=>{
+    [...group.children].forEach((c,i)=>{ c.style.transitionDelay=(i*70)+'ms'; });
+  });
+
+  /* ---------- 5. Counter animation ---------- */
+  const cio=new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      if(!e.isIntersecting) return;
+      const el=e.target, target=parseFloat(el.dataset.count), suf=el.dataset.suffix||'';
+      const dec=(target%1!==0)?1:0, dur=1500, t0=performance.now();
+      (function tick(t){
+        const p=Math.min((t-t0)/dur,1), eased=1-Math.pow(1-p,3);
+        el.textContent=(target*eased).toFixed(dec)+suf;
+        if(p<1) requestAnimationFrame(tick);
+      })(t0);
+      cio.unobserve(el);
+    });
+  },{threshold:.5});
+  document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+  /* ---------- 6. Hero chart bars ---------- */
+  const bars=document.getElementById('bars');
+  if(bars){
+    const bio=new IntersectionObserver(es=>{
+      es.forEach(e=>{ if(e.isIntersecting){
+        bars.querySelectorAll('.bar').forEach((b,i)=>{
+          setTimeout(()=>{ b.style.height=b.dataset.h+'%'; }, reduce?0:i*110);
+        });
+        bio.disconnect();
+      }});
+    },{threshold:.4});
+    bio.observe(bars);
+  }
+
+  /* ---------- 7. Typing effect ---------- */
+  const typed=document.getElementById('typed');
+  if(typed && !reduce){
+    const words=['Rank Higher','Convert Better','Load Faster','Grow Revenue'];
+    let w=0,c=0,del=false;
+    (function loop(){
+      const word=words[w];
+      typed.textContent=word.slice(0,c);
+      if(!del && c<word.length){c++;setTimeout(loop,85);}
+      else if(!del){del=true;setTimeout(loop,1500);}
+      else if(c>0){c--;typed.textContent=word.slice(0,c);setTimeout(loop,45);}
+      else{del=false;w=(w+1)%words.length;setTimeout(loop,260);}
+    })();
+  }
+
+  /* ---------- 8. Soft 3D tilt ---------- */
+  if(!reduce){
+    document.querySelectorAll('.tilt').forEach(card=>{
+      card.addEventListener('mousemove',ev=>{
+        const r=card.getBoundingClientRect();
+        const x=(ev.clientX-r.left)/r.width-.5, y=(ev.clientY-r.top)/r.height-.5;
+        card.style.transform=`perspective(900px) rotateY(${x*7}deg) rotateX(${-y*7}deg) translateY(-6px)`;
+      });
+      card.addEventListener('mouseleave',()=>{ card.style.transform=''; });
+    });
+
+    /* hero pointer parallax */
+    const wrap=document.getElementById('dashWrap');
+    if(wrap){
+      window.addEventListener('mousemove',e=>{
+        const x=(e.clientX/window.innerWidth-.5), y=(e.clientY/window.innerHeight-.5);
+        wrap.style.setProperty('--px',(x*14)+'px');
+        wrap.style.transform=`translate(${x*14}px,${y*10}px)`;
+      },{passive:true});
+    }
+  }
+
+  /* ---------- 9. FAQ accordion ---------- */
+  document.querySelectorAll('.acc').forEach(acc=>{
+    const q=acc.querySelector('.acc-q'), a=acc.querySelector('.acc-a');
+    q.addEventListener('click',()=>{
+      const open=acc.classList.contains('open');
+      document.querySelectorAll('.acc.open').forEach(o=>{
+        o.classList.remove('open'); o.querySelector('.acc-a').style.maxHeight=null;
+      });
+      if(!open){ acc.classList.add('open'); a.style.maxHeight=a.scrollHeight+'px'; }
+    });
+  });
+
+  /* ---------- 10. Testimonial slider ---------- */
+  const slides=document.getElementById('slides'), dots=document.getElementById('dots');
+  if(slides && dots){
+    const total=slides.children.length; let idx=0, timer;
+    for(let i=0;i<total;i++){
+      const b=document.createElement('button');
+      b.setAttribute('aria-label','Slide '+(i+1));
+      b.addEventListener('click',()=>go(i,true));
+      dots.appendChild(b);
+    }
+    function go(i,stop){
+      idx=(i+total)%total;
+      slides.style.transform=`translateX(-${idx*100}%)`;
+      [...dots.children].forEach((d,k)=>d.classList.toggle('on',k===idx));
+      if(stop){clearInterval(timer);timer=setInterval(()=>go(idx+1),6500);}
+    }
+    go(0); timer=setInterval(()=>go(idx+1),6500);
+  }
+
+  /* ---------- 11. Contact form validation ---------- */
+  const form=document.getElementById('contactForm'), ok=document.getElementById('formOk');
+  if(form){
+    const emailRe=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    form.addEventListener('submit',e=>{
+      e.preventDefault();
+      let valid=true;
+      form.querySelectorAll('[required]').forEach(f=>{
+        const field=f.closest('.field'); let good=f.value.trim()!=='';
+        if(f.type==='email') good=emailRe.test(f.value.trim());
+        field.classList.toggle('err',!good);
+        if(!good && valid){ f.focus(); valid=false; }
+      });
+      if(!valid) return;
+      ok.style.display='block';
+      form.reset();
+      ok.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
+      setTimeout(()=>{ok.style.display='none';},7000);
+    });
+    form.querySelectorAll('input,select,textarea').forEach(f=>{
+      f.addEventListener('input',()=>f.closest('.field').classList.remove('err'));
+    });
+  }
+
+  /* ---------- 12. Anchor offset smoothing for sticky header ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const id=a.getAttribute('href');
+      if(id.length<2) return;
+      const t=document.querySelector(id);
+      if(!t) return;
+      e.preventDefault();
+      window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-78,behavior:reduce?'auto':'smooth'});
+    });
+  });
+})();
+</script>
+</body>
+</html>
